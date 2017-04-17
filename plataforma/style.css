@@ -1,0 +1,114 @@
+.row{max-width:1200px !important;float:center !important;box-align:center;text-align:center}
+.cont-1,.cont-2,.cont-3,.cont-4,.cont-5,.cont-6,.cont-7,.cont-8,.cont-9,.cont-10,.cont-11,.cont-12,.cont-5{min-height:1em;text-align:left;padding:.5em 1em;}
+@media only screen and (max-width: 700px){.cont-1,.cont-2,.cont-3,.cont-4,.cont-5,.cont-6,.cont-7,.cont-8,.cont-9,.cont-10,.cont-11,.cont-12,.cont-5{width:100% !important}
+}.cont-1{width:8%}
+.cont-2{width:16%}
+.cont-3{width:24%}
+.cont-4{width:33%;}
+@media only screen and (max-width: 800px){.cont-4{width:32% !important}
+}@media only screen and (max-width: 650px){.cont-4{width:100% !important}
+}.cont-5{width:41%}
+.cont-6{width:49%}
+.cont-7{width:58%}
+.cont-8{width:66%}
+.cont-9{width:74%}
+.cont-10{width:83%}
+.cont-11{width:91%}
+.cont-12{width:99%}
+.columna{display:inline-block;vertical-align:bottom;vertical-align:top}
+.reveal-modal{margin-left:-47.5% !important;width:95% !important}
+p,h1. h2,h3{font-family:'Open Sans Condensed',sans-serif !important;color:#0d0d0b}
+header p,header h1. h2,header h3{font-family:'Open Sans Condensed',sans-serif}
+header #user-bar{height:30px;background:#2ea3f2 url("../img/blugr2.jpg");}
+header #user-bar #info-of-userbar{padding:5px 10px 0 10px;}
+header #user-bar #info-of-userbar #part01{text-align:left;height:30px !important;width:50% !important;float:left}
+header #user-bar #info-of-userbar #part02{text-align:right;height:30px !important;width:50%;float:right;}
+@media only screen and (max-width: 767px){header #user-bar #info-of-userbar #part02{width:100%}
+}header #user-bar #info-of-userbar #part02,header #user-bar #info-of-userbar #part01{display:inline-block;vertical-align:bottom;}
+header #user-bar #info-of-userbar #part02 a,header #user-bar #info-of-userbar #part01 a{display:inline-block;vertical-align:top;margin-right:5px;height:20px}
+header #user-bar #info-of-userbar #part02 p,header #user-bar #info-of-userbar #part01 p{color:#abdafa;font-size:13px !important;}
+header #user-bar #info-of-userbar #part02 p:hover,header #user-bar #info-of-userbar #part01 p:hover{color:#cbe9fe}
+header #headline{height:60px;border-bottom:2px solid #000;background:#1f1f1f;}
+header #headline #headlineint{height:50px !important;}
+header #headline #headlineint #title{margin-top:-5px}
+header #headline #headlineint h3{color:#a9ad9a;font-size:1.7rem}
+header #notificaciones-lista{background:#5b5b5b;text-align:center;border-bottom:1px solid #000;}
+header #notificaciones-lista ul{text-align:center;list-style:none;background:#3c3c3c;margin:0;}
+header #notificaciones-lista ul li{padding:.3em 0;color:#0180fe;background:#3c3c3c;border-top:1px solid #454545;border-bottom:1px solid #303030;}
+header #notificaciones-lista ul li:hover{background:#303030}
+header #notificaciones-lista ul #last-il{box-shadow:0 5px 10px #000;height:0 !important;}
+header #notificaciones-lista ul #last-il:hover{background:#3c3c3c}
+header #notificaciones-lista ul #first-il:hover{background:#3c3c3c}
+header #notificaciones-lista ul #ver-todas{color:#ca6500}
+.contOfLogin,#logoIndexApp{text-align:center}
+#indexLogIn #logoIndexApp{font-size:4em !important;text-align:center;color:#404040 !important;}
+#indexLogIn #logoIndexApp h2{color:#404040 !important}
+#indexLogIn #logoIndexApp small{color:#3d99f5;font-weight:normal}
+#indexLogIn #logoIndexApp #icontainer{margin-bottom:-.5em;}
+#indexLogIn #logoIndexApp #icontainer .fi-cloud{font-size:1.7em}
+#indexLogIn .fi-torso-business,#indexLogIn .fi-lock{text-align:center !important;font-size:2em !important}
+#indexLogIn form{text-align:center !important;}
+#indexLogIn form label{font-size:1.3rem !important;display:inline-block;text-align:center;vertical-align:top}
+#indexLogIn form input{width:75%;display:inline-block !important;vertical-align:top;margin:.2em 0 0 .5em;}
+#indexLogIn form input #user,#indexLogIn form input #pass{width:50% !important;display:inline-block}
+#indexLogIn form #checkbox1{width:20px;}
+#indexLogIn form #checkbox1 #contCheck{font-size:.2em !important}
+#indexLogIn form .button{width:40%}
+#notificacion{position:absolute;right:30px;top:34px;height:40px;margin:0;}
+@media only screen and (max-width: 767px){#notificacion{right:5px}
+}#notificacion .activate{color:#3c3c3c;}
+#notificacion .activate:hover{color:#494949}
+#notificacion .noti-activate{color:#22465b;text-shadow:1px 0 0 #30617e,-1px 0 0 #30617e,0 1px 0 #30617e,0 -1px 0 #30617e,1px 1px #30617e,-1px -1px 0 #30617e,1px -1px 0 #30617e,-1px 1px 0 #30617e;}
+#notificacion .noti-activate:hover{color:#29546d}
+#notificacion p{color:#0a0a0a}
+#alerts .alert-box{margin:0 0 7px 0;}
+#alerts .alert-box a{color:#000}
+#alerts .alert-box a:hover{text-decoration:underline}
+#alerts .alert-box .close{text-decoration:none !important}
+#alerts .inmodal-table{width:100% !important;float:center;text-align:center;}
+#alerts .inmodal-table thead{width:100% !important}
+#alerts .inmodal-table tr{width:100% !important}
+#user-profile{border-bottom:3px dashed #ddded8;}
+#user-profile #link-afiliado p{text-align:center}
+#user-profile #img-user-profile{width:140px;margin-bottom:7px;}
+#user-profile #img-user-profile img{height:140px;border:2px solid #272822}
+#user-profile #info-user-profile{height:140px;width:300px;}
+#user-profile #info-user-profile ul li{list-style:none;margin-top:-12px}
+#user-profile #info-user-profile,#user-profile #img-user-profile{display:inline-block;vertical-align:top;margin-top:15px;}
+@media only screen and (max-width: 600px){#user-profile #info-user-profile,#user-profile #img-user-profile{text-align:center !important;width:100% !important}
+}#user-profile #bank-user-profile{font-size:.8em;margin-top:-15px !important}
+#user-contador{text-align:center;}
+#user-contador .cont-4{text-align:center;}
+#user-contador .cont-4 h4{margin-top:-15px}
+#user-contador .cont-4 #cont-total{color:#2475d7}
+#user-contador .cont-4 #cont-mensual{color:#44b71e}
+#user-contador .cont-4 #cont-user{color:#ba1b1b}
+#Modal-editar div form #foto-change{text-align:center;}
+#Modal-editar div form #foto-change img{width:140px}
+#Modal-editar div form #separador{border-bottom:3px dashed #ddded8}
+#Modal-cursos #mis-cursos{padding:0;}
+#Modal-cursos #mis-cursos .curso{max-width:850px;background:#fff;padding:0;margin:1em 0;box-shadow:3px 3px 15px 5px #808080;}
+#Modal-cursos #mis-cursos .curso .Name-curso,#Modal-cursos #mis-cursos .curso .Image-curso{width:50%;display:inline-block;vertical-align:top;height:120px;margin:0 -1px;}
+@media only screen and (max-width: 820px){#Modal-cursos #mis-cursos .curso .Name-curso,#Modal-cursos #mis-cursos .curso .Image-curso{width:100%;margin:0 !important;height:100px}
+}#Modal-cursos #mis-cursos .curso .Name-curso{padding:1em;text-align:center;}
+#Modal-cursos #mis-cursos .curso .Name-curso h3{font-size:1.8em;border-bottom:2px solid #bfbfbf}
+#Modal-cursos #mis-cursos .curso .Image-curso{background-size:100% !important;background-position:center}
+#contenido #mired .pagi{text-align:center !important}
+#contenido #mired .cinta{padding-top:30px;width:100%}
+#contenido #mired .bronce h3{color:#9e5829}
+#contenido #mired .plata h3{color:#bdbfb5}
+#contenido #mired .oro h3{color:#d5cf00}
+#contenido #mired .afiliado .arrow-afil{text-align:center;}
+#contenido #mired .afiliado .arrow-afil .flechabajo{color:#137195;font-size:3em;text-align:center}
+#contenido #mired .afiliado:hover{background:#e2e3df}
+#contenido #mired .redimage{text-align:center;}
+#contenido #mired .redimage img{height:140px;border:2px solid #272822;text-align:center !important}
+#contenido #mired .afiliado-nick,#contenido #mired .miingreso-afiliado,#contenido #mired .susafiliados,#contenido #mired .afiliado{text-align:center}
+#contenido #mired .afiliado-nick p{color:#137195;margin-bottom:.3em}
+#contenido #mired .susafiliados-bronce{color:#a05629}
+#contenido #mired .susafiliados-plata{color:#888}
+#contenido #mired .susafiliados-oro{color:#cdca38}
+#contenido #mired .visitar-redafiliado{max-width:150px;width:100%}
+.cinta .bronce{background:#fff url("../img/bronce.jpg");height:150px}
+.cinta .plata{background:url("../img/plaa.jpg")}
+.cinta .oro{background:url("../img/oro.jpg")}

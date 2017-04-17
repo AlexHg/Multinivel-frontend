@@ -1,0 +1,828 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Mi oficina: @Alexh42</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="description" content="">
+<meta name="author" content="Burntheweb - Alejandro Hernandez">
+<link rel="shortcut icon" href="../favicon.ico" />
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, height=device-height,maximum-scale=2, user-scalable=no"/>
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="handheldFriendly" content="true"/>
+	<link rel="stylesheet" href="../dist/fonts/foundation-icons.css">
+	<!--Foundation-->
+	<link rel="stylesheet" type="text/css" href="../dist/css/foundation.css" />
+    <script src="../dist/js/modernizr.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+	/*ESCONDER CAJAS POR MEDIO DE CLASES*/
+	body .invisible{display:none;}
+    body .visible{display:display;}
+    body .visiblei{display:display !important}
+	/*REGLAS: class="va1-var2"
+	var1= visible || hidden; (mostrar || esconder)
+	var2= phone || tablet || desktop; (telefono || tableta || PC)
+	*armar convinacion adecuada* */
+	    .hidden{display:none;visibility:hidden}
+	    .visible-phone{display:none !important}
+	    .visible-tablet{display:none !important}
+	    .hidden-desktop{display:none !important}
+	    .visible-desktop{display:inherit !important}
+	    @media (min-width: 768px) and (max-width: 979px){.hidden-desktop{display:inherit !important}
+	    .visible-desktop{display:none !important}
+	    .visible-tablet{display:inherit !important}
+	    .hidden-tablet{display:none !important}}
+	    @media (max-width: 767px){.hidden-desktop{display:inherit !important}
+	    .visible-desktop{display:none !important}
+	    .visible-phone{display:inherit !important}
+	    .hidden-phone{display:none !important}}
+	</style>
+	<style type="text/css">
+		@charset "UTF-8";
+/* CSS Document */
+.inmodal-table{
+	width:100%;
+	}
+@media screen and (max-width:720px){
+	table, thead, tr, th, tbody, td{
+		display:block !important;
+	}
+	
+	thead tr { 
+		position: absolute !important;
+		top: -9999px !important;
+		left: -9999px !important;
+	}
+	
+	td { 
+		border: none !important;
+		border-bottom: 1px solid #eee !important; 
+		position: relative !important;
+		padding-left: 50% !important; 
+	}
+	td:before { 
+		position: absolute;
+	
+		top: 6px !important;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap !important;
+	}
+	
+	#depositable td:nth-of-type(1):before { content: "Usuario"; }
+	#depositable td:nth-of-type(2):before { content: "Monto"; }
+	#depositable td:nth-of-type(3):before { content: "Baucher"; }
+	#depositable td:nth-of-type(4):before { content: " "; }
+
+	#pendentable td:nth-of-type(1):before { content: "Usuario"; }
+	#pendentable td:nth-of-type(2):before { content: "Cuenta"; }
+	#pendentable td:nth-of-type(3):before { content: "Banco"; }
+	#pendentable td:nth-of-type(4):before { content: "Monto"; }
+	#pendentable td:nth-of-type(5):before { content: "Baucher"; }
+	#pendentable td:nth-of-type(6):before { content: " "; }
+
+	#unitable td:nth-of-type(1):before { content: "Fecha"; }
+	#unitable td:nth-of-type(2):before { content: "Usuario"; }
+	#unitable td:nth-of-type(3):before { content: "Nombre"; }
+
+	}
+
+	</style>
+</head>
+<body>
+	<header>
+		<div id="user-bar">
+			<div id="info-of-userbar" class="row">
+				<div id="part01" class="visible-desktop">
+					<a href=""><p><i class="fi-telephone"></i> 01800-278-5487</p></a>
+					<a href=""><p><i class="fi-mail"></i> empresa@laemp.com</p></a>
+					<a href=""><p> <i class="fi-social-facebook"> Facebook</i></p></a>
+					<a href=""><p> <i class="fi-social-twitter"> Twitter</i></p></a>
+				</div>
+				<div id="part02">
+					<a href=""><p> Mi cuenta</p></a>
+					<a href=""><p> Cerrar sesion</p></a>
+				</div>
+			</div>
+		</div>
+		<div id="headline">
+			<div class="row" id="headlineint">
+				<div class="cont-5" id="title"><h3>@LiderAJ <small class="hidden-phone">ID. 0015029</small></h3></div>
+			</div>
+		</div>
+		<!--<div id="notificaciones-lista" class="invisible">
+			<ul>
+				<li id="first-il"></li>
+				<a href=""><li>Felipe Murrieta se ha registrado como tu afiliado</li></a>
+				<a href=""><li>Tu proximo pago debe ser a: Enrique Guzman por $250</li></a>
+				<a href=""><li>Han hecho un deposito en tu cuenta bancaria</li></a>
+				<a href=""><li>Jorge Fernandez se ha registrado como tu afiliado</li></a>
+				<a href=""><li id="ver-todas">Ver todas</li></a>
+				<li id="last-il"></li>
+			</ul>
+			
+		</div>-->	
+	</header>
+	<div id="notificacion">
+		<!--<span id="notificacion-button">
+			<p>
+				<a href=""><span class="fi-megaphone noti-activate"></span></a>&nbsp;&nbsp;
+				<a href=""><span class="fi-mail"></span></a>&nbsp;
+				<a href=""><span class="fi-widget"></span> </a>
+			</p>
+		</span>-->
+		<!--<div id="notbutton" class="button alert visible" onclick="notific(0)">
+			N<span class="hidden-phone">otificaciones</span> (5)
+		</div>
+		<div id="notbutton2" class="button alert invisible" onclick="notific(1)">
+			N<span class="hidden-phone">otificaciones</span> (5)
+		</div>-->
+	</div>
+	<section id="alerts">
+		<div data-alert class="alert-box success">
+		  Te han depositado (<span id="depositos">2</span>) personas a tu cuenta bancaria - <a href="#" data-reveal-id="Modal-depositos">Ver los bauchers!</a>
+		  <a href="#" class="close">&times;</a>
+		</div>
+		<div id="Modal-depositos" class="reveal-modal" data-reveal>
+			<h2>Comprobantes de pago a mi cuenta.</h2>
+			<p class="lead">Comprobantes de deposito por fotografia o escaneo al baucher</p>
+			<table width="100%" class="inmodal-table" id="depositable">
+			  <thead>
+			    <tr>
+			      <th>Usuario</th>
+			      <th>Monto</th>
+			      <th>Baucher (imagen)</th>
+			      <th></th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr><form>
+			      <td><a href="#">@Alexh42</a></td>
+			      <td>$458.97</td>
+			      <td><a href="#">Ver imagen</a></td>
+			      <th><input type="submit" value="Aprobar"><input type="button" value="Denegar"></th>
+			    </form></tr>
+			    <tr><form>
+			      <td><a href="">@LiderM</a></td>
+			      <td>$780.50</td>
+			      <td><a href="#">Ver imagen</a></td>
+			      <th><input type="submit" value="Aprobar"><input type="button" value="Denegar"></th>
+			    </form></tr>
+			    <tr><form>
+			      <td><a href="">@goalFut</a></td>
+			      <td>$45.70</td>
+			      <td><a href="#">Ver imagen</a></td>
+			      <th><input type="submit" value="Aprobar"><input type="button" value="Denegar"></th>
+			    </form></tr>
+			  </tbody>
+			</table>
+			<h3 align="center"><a href="#">Ver mis bonificaciones</a></h3>
+			<a class="close-reveal-modal">&#215;</a>
+		</div>
+
+		<div data-alert class="alert-box warning">
+		  Tu cuenta tiene (<span id="pendientes">5</span>) depositos pendientes - <a href="#" data-reveal-id="Modal-pendientes">Ver los pendientes!</a>
+		  <a href="#" class="close">&times;</a>
+		</div>
+		<div id="Modal-pendientes" class="reveal-modal" data-reveal>
+			<h2>Lista de depositos pendientes.</h2>
+			<p class="lead">Deposita la cantidad indicada a las siguientes cuentas bancarias y envia el comprobante de deposito</p>
+			<table width="100%" class="inmodal-table" id="pendentable">
+			  <thead>
+			    <tr>
+			      <th>Usuario</th>
+			      <th>Cuenta</th>
+			      <th>Banco</th>
+			      <th>Monto</th>
+			      <th>Baucher (imagen)</th>
+			      <th>d</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr><form>
+			      <td><a href="#">@Alexh42</a></td>
+			      <td>002840901931486966</td>
+			      <td>Bancomer</td>
+			      <td>$458.97</td>
+			      <td><input type="file" name="imagefilename" accept="image/x-png, image/gif, image/jpeg" /></td>
+			      <th><input type="submit" value="Enviar"></th>
+			    </form></tr>
+			    <tr><form>
+			      <td><a href="">@LiderM</a></td>
+			      <td>002840901931333966</td>
+			      <td>Banamex</td>
+			      <td>$780.50</td>
+			      <td><input type="file" name="imagefilename" accept="image/x-png, image/gif, image/jpeg" /></td>
+			      <th><input type="submit" value="Enviar"></th>
+			    </form></tr>
+			    <tr><form>
+			      <td><a href="">@goalFut</a></td>
+			      <td>902412901931333745</td>
+			      <td>Santander</td>
+			      <td>$45.70</td>
+			      <td><input type="file" name="imagefilename" accept="image/x-png, image/gif, image/jpeg" /></td>
+			      <th><input type="submit" value="Enviar"></th>
+			    </form></tr>
+			  </tbody>
+			</table>
+			<h3 align="center"><a href="#">Ver depositos realizados</a></h3>
+			<a class="close-reveal-modal">&#215;</a>
+		</div>
+
+
+		<div data-alert class="alert-box info ">
+		  Se han unido (<span id="uniones">35</span>) personas a tu red - <a href="#" data-reveal-id="Modal-uniones">Conocelos!</a>
+ 		  <a href="#" class="close">&times;</a>
+		</div>
+		<div id="Modal-uniones" class="reveal-modal" data-reveal>
+			<h2>Nuevas personas en tu red.</h2>
+			<p class="lead">Conoce las nuevas caras</p>
+			<table width="100%" class="inmodal-table" id="unitable">
+			  <thead>
+			    <tr>
+			      <th>Fecha</th>
+			      <th>Usuario</th>
+			      <th>Nombre</th>
+			    </tr>
+			  </thead>
+			  <tbody>
+			    <tr>
+			    	<td>5 de agosto 2014</td>
+			    	<td><a href="#">@Alexh42</a></td>
+			    	<td>Alejandro Hernandez</td>
+			    </tr>
+			    <tr>
+			    	<td>2 de agosto 2014</td>
+			    	<td><a href="#">@Leo87</a></td>
+			    	<td>Leonel Ruiz</td>
+			    </tr>
+			    <tr>
+			    	<td>1 de agosto 2014</td>
+			    	<td><a href="#">@MuldialW</a></td>
+			    	<td>Gerardo Williams</td>
+			    </tr>
+			  </tbody>
+			</table>
+			<h3 align="center"><a href="#">Ver todos</a></h3>
+			<a class="close-reveal-modal">&#215;</a>
+		</div>
+
+		<div data-alert class="alert-box alert ">
+		  Tu oficina ha sido bloqueada - <a href="#" data-reveal-id="Modal-motivos">Ver los motivos!</a>
+		  <a href="#" class="close">&times;</a>
+		</div>
+		<div id="Modal-motivos" class="reveal-modal" data-reveal>
+			<h2>Motivos de bloqueo de cuenta.</h2>
+			<p class="lead">A continuacion los motivos y soluciones.</p>
+			
+			<a class="close-reveal-modal">&#215;</a>
+		</div>
+
+		<div data-alert class="alert-box secondary ">
+		  Felicidades, ha aumentado su rango! - Rango actual <span id="rango">Oro</span>
+		  <a href="#" class="close">&times;</a>
+		</div>
+	</section>
+	<section id="user-profile">
+		<div class="row">
+			<div class="cont-12">
+				<div id="img-user-profile"><img src="../img/per/example.jpg"></div>
+				<div id="info-user-profile">
+					<ul>
+						<li><h3 id="name-user-profile">Antonio Jimenez</h3></li>
+						<li><p id="city-user-profile">Xalapa, Ver. Mexico</p></li>
+						<li ><p><span style="font-size: 1.5em; padding-bottom:.3em;" class="fi-credit-card"> </span><span id="bank-user-profile"><span id="deposit">4766870038086493</span> (<span id="bank">Banamex</span>)</span></p></li>
+						<li></li>
+						<li><p><b data-tooltip  data-options="disable_for_touch:true" class="has-tip " title="El rango muestra el nivel de patrocineo que tienes en la red. <br> <small style='font-size:.7em; text-align:rigth;'>Es proporcional a los beneficios que se te otorgan.</small>">Rango (?):</b> Oro &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b data-tooltip  data-options="disable_for_touch:true" class="has-tip " title="El nivel demuestra en que lugar estas en la gerarquia de la red. <br> <small style='font-size:.7em; text-align:rigth;'>Es el numero de socios que se encuentran por encima tuyo. </small>">Nivel (?):</b> 35</p></li>
+						<li><p>
+							<a data-reveal-id="Modal-editar"><i class="fi-wrench"></i> Editar mi informacion </a> &nbsp;&nbsp;
+							<a href="#"><i class="fi-power"></i> Salir</a>
+						</p></li>
+					</ul>
+				</div>
+			</div>
+			<div id="Modal-editar" class="reveal-modal" data-reveal>
+				<h2>Editar mi informacion.</h2>
+				<p class="lead">Modifica tu informacion personal en este apartado.</p>
+				<div>
+					<form>
+						<div class="cont-12 columna"id="foto-change">
+							<img src="../img/per/example.jpg" width="140px" align="center">
+						</div>
+						<label class=" cont-4 columna">Nueva foto de perfil
+						    <input type="file" name="imagefilename" accept="image/x-png, image/gif, image/jpeg" />
+						</label>
+					    <label class="cont-5 columna">Nombre de cuenta
+					    	<div class="row collapse">
+						    	<div class="small-2 columns">
+						       		<span class="prefix radius">@</span>
+						       	</div>
+						        <div class="small-10 columns">
+						    	   	<input type="text" placeholder="Ejemplo: JoseRMG54">
+						        </div>
+						    </div>
+					    </label>
+						<label class="cont-4 columna">Vieja contraseña
+						    <input type="text" placeholder="Minimo 6 digitos" />
+						</label>
+						<label class="cont-4 columna">Nueva contraseña
+						    <input type="text" placeholder="Minimo 6 digitos" />
+						</label>
+						<label class="cont-4 columna">Repetir contraseña
+						    <input type="text" placeholder="Repite la contraseña con un minimo de 6 digitos" />
+						</label>
+						<div id="separador"></div><br>
+						<label class="cont-4 columna">Banco
+						    <input type="text" placeholder="Ejemplo: Banamex" />
+						</label>
+						<label class="cont-8 columna">Numero de deposito bancario
+						    <input type="text" placeholder="Numero de deposito bancario" />
+						</label>
+						<label class="cont-6 columna">Nombre completo
+						    <input type="text" placeholder="Escribe tu nombre y apellidos" />
+						</label>
+						<label class="cont-6 columna">Ciudad y estado
+						    <input type="text" placeholder="Ej: Xalapa, Ver." />
+						</label>
+						<div class="large-6 columns">
+					      <label>Genero</label>
+					      <input type="radio" name="pokemon" value="masculino" id="pokemonRed"><label for="pokemonRed">Masculino</label>
+					      <input type="radio" name="pokemon" value="femenino" id="pokemonBlue"><label for="pokemonBlue">Femenino</label>
+					    </div>
+					    <input class="button success" type="submit" value="Subir y guardar">
+					    <input class="button" type="reset" value="Limpiar formulario">
+					</form>
+				</div>
+				<a class="close-reveal-modal">&#215;</a>
+			</div>
+
+			<div class="cont-12" id="link-afiliado">
+				<p><b data-tooltip  data-options="disable_for_touch:true" class="has-tip " title="Comparte este link para afiliar personas. <br> <small style='font-size:.7em; text-align:rigth;'>Las personas que se registren con esto quedaran registrados en tu red, generando ganancias para ti. </small>">Afiliar (?):</b> http://www.serlibre.com/afil=LiderAJ</p>
+			</div>
+		</div>
+	</section>
+	<section id="user-contador">
+		<div class="row">
+			<div class="cont-4 columna" >
+				<h2 id="cont-total">$500,487 MXN</h2>
+				<h4>Balance total</h4>
+			</div>
+			<div class="cont-4 columna">
+				<h2 id="cont-mensual">$8,543 MXN</h2>
+				<h4>Balance este mes</h4>
+			</div>
+			<div class="cont-4 columna">
+				<h2 id="cont-user">5</h2>
+				<h4>Usuarios en mi red</h4>
+			</div>
+		</div>
+	</section>
+	<section>
+		<p align="center">
+			<a class="button" data-reveal-id="Modal-cursos">Mis cursos</a>
+			<a class="button" data-reveal-id="Modal-productos">Mis productos</a>
+		</p>
+		<div id="Modal-cursos" class="reveal-modal" data-reveal align="center">
+			<h2>Mis cursos.</h2>
+			<p class="lead">Cursos, tips y tutoriales para el manejo personal y profecional de mi persona.</p>
+			<div id="mis-cursos" class="row">
+				<a><div class="cont-12 columna curso">
+					<div class="Name-curso">
+						<h3>La verdadera elocuencia</h3>
+					</div>
+					<div class="Image-curso" style="background:url(../img/cursos/mundo.jpg)"></div>
+				</div></a>
+				<a><div class="cont-12 columna curso">
+					<div class="Name-curso">
+						<h3>Salud personal.</h3>
+					</div>
+					<div class="Image-curso" style="background:url(../img/cursos/health2.jpg);"></div>
+				</div></a>
+				<a><div class="cont-12 columna curso">
+					<div class="Name-curso">
+						<h3>Pierde el miedo al dinero!</h3>
+					</div>
+					<div class="Image-curso" style="background:url(../img/cursos/money.jpeg);"></div>
+				</div></a>
+			</div>
+			<a class="close-reveal-modal">&#215;</a>
+		</div>
+		<div id="Modal-productos" class="reveal-modal" data-reveal align="center">
+			<h2>Mis productos.</h2>
+			<p class="lead">Productos, libros, videos, gratificaciónes y beneficios por formar parte de esta grandiosa red.</p>
+			
+			<a class="close-reveal-modal">&#215;</a>
+		</div>
+		
+	</section>
+	<section id="buscar">
+		<div class="row">
+			<div class="large-7 columna">
+		      <div class="row collapse">
+		        <div class="small-9 columns">
+		          <input type="text" placeholder="Busqueda de usuarios">
+		        </div>
+		        <div class="small-3 columns">
+		          <a href="#" class="button postfix">Search</a>
+		        </div>
+		      </div>
+		    </div>
+		</div>
+		
+	</section>
+	<section id="contenido">
+		<div id="mired" class="row">
+			<div class="mired-img">
+				<h2>Mi red</h2>
+				<div class="redimage"><img src="../img/per/example.jpg"></div>
+			</div>
+			<div class="cinta bronce">
+				<h3>Afiliados bronce</h3>
+			</div>
+			<div id="afiliados">
+				<div class="afiliado cont-3 columna">
+					<div class="arrow-afil">
+						<span class='fi-arrow-down flechabajo'></span>
+					</div>
+					<div class="redimage">
+						<img src="../img/per/peo2.jpg">
+					</div>	
+					<div class="afiliado-nick">
+						<p class="afiliado-nick-nick">@jorgeRM</p>
+					</div>
+					<div class="miingreso-afiliado">
+						<p class="mingreso-afil">$40,500 MXN</p>
+					</div>
+					<div class="susafiliados">
+						<span class="fi-torso susafiliados-bronce"> x 15</span>
+						<span class="fi-torso susafiliados-plata"> x 10</span>
+						<span class="fi-torso susafiliados-oro"> x 5</span>
+					</div>
+					<br>
+					<a href="" class="visitar-redafiliado button ">
+						Visitar
+					</a>
+				</div>
+				<div class="afiliado cont-3 columna">
+					<div class="arrow-afil">
+						<span class='fi-arrow-down flechabajo'></span>
+					</div>
+					<div class="redimage">
+						<img src="../img/per/peo3.jpg">
+					</div>	
+					<div class="afiliado-nick">
+						<p class="afiliado-nick-nick">@jorgeRM</p>
+					</div>
+					<div class="miingreso-afiliado">
+						<p class="mingreso-afil">$40,500 MXN</p>
+					</div>
+					<div class="susafiliados">
+						<span class="fi-torso susafiliados-bronce"> x 15</span>
+						<span class="fi-torso susafiliados-plata"> x 10</span>
+						<span class="fi-torso susafiliados-oro"> x 5</span>
+					</div>
+					<br>
+					<a href="" class="visitar-redafiliado button ">
+						Visitar
+					</a>
+				</div>
+				<div class="afiliado cont-3 columna">
+					<div class="arrow-afil">
+						<span class='fi-arrow-down flechabajo'></span>
+					</div>
+					<div class="redimage">
+						<img src="../img/per/peo4.jpg">
+					</div>	
+					<div class="afiliado-nick">
+						<p class="afiliado-nick-nick">@jorgeRM</p>
+					</div>
+					<div class="miingreso-afiliado">
+						<p class="mingreso-afil">$40,500 MXN</p>
+					</div>
+					<div class="susafiliados">
+						<span class="fi-torso susafiliados-bronce"> x 15</span>
+						<span class="fi-torso susafiliados-plata"> x 10</span>
+						<span class="fi-torso susafiliados-oro"> x 5</span>
+					</div>
+					<br>
+					<a href="" class="visitar-redafiliado button ">
+						Visitar
+					</a>
+				</div>
+				<div class="afiliado cont-3 columna">
+					<div class="arrow-afil">
+						<span class='fi-arrow-down flechabajo'></span>
+					</div>
+					<div class="redimage">
+						<img src="../img/per/peo1.jpg">
+					</div>	
+					<div class="afiliado-nick">
+						<p class="afiliado-nick-nick">@jorgeRM</p>
+					</div>
+					<div class="miingreso-afiliado">
+						<p class="mingreso-afil">$40,500 MXN</p>
+					</div>
+					<div class="susafiliados">
+						<span class="fi-torso susafiliados-bronce"> x 15</span>
+						<span class="fi-torso susafiliados-plata"> x 10</span>
+						<span class="fi-torso susafiliados-oro"> x 5</span>
+					</div>
+					<br>
+					<a href="" class="visitar-redafiliado button ">
+						Visitar
+					</a>
+				</div>
+				<div class="pagination-centered">
+				  <ul class="pagination">
+				    <li class="arrow unavailable"><a href="">&laquo;</a></li>
+				    <li class="current"><a href="">1</a></li>
+				    <li><a href="">2</a></li>
+				    <li><a href="">3</a></li>
+				    <li><a href="">4</a></li>
+				    <li class="unavailable"><a href="">&hellip;</a></li>
+				    <li><a href="">12</a></li>
+				    <li><a href="">13</a></li>
+				    <li class="arrow"><a href="">&raquo;</a></li>
+				  </ul>
+				</div>
+			</div>
+			<div class="cinta plata">
+				<h3>Afiliados plata</h3>
+			</div>
+			<div id="afiliados">
+				<div class="afiliado cont-3 columna">
+					<div class="arrow-afil">
+						<span class='fi-arrow-down flechabajo'></span>
+					</div>
+					<div class="redimage">
+						<img src="../img/per/peo2.jpg">
+					</div>	
+					<div class="afiliado-nick">
+						<p class="afiliado-nick-nick">@jorgeRM</p>
+					</div>
+					<div class="miingreso-afiliado">
+						<p class="mingreso-afil">$40,500 MXN</p>
+					</div>
+					<div class="susafiliados">
+						<span class="fi-torso susafiliados-bronce"> x 15</span>
+						<span class="fi-torso susafiliados-plata"> x 10</span>
+						<span class="fi-torso susafiliados-oro"> x 5</span>
+					</div>
+					<br>
+					<a href="" class="visitar-redafiliado button ">
+						Visitar
+					</a>
+				</div>
+				<div class="afiliado cont-3 columna">
+					<div class="arrow-afil">
+						<span class='fi-arrow-down flechabajo'></span>
+					</div>
+					<div class="redimage">
+						<img src="../img/per/peo3.jpg">
+					</div>	
+					<div class="afiliado-nick">
+						<p class="afiliado-nick-nick">@jorgeRM</p>
+					</div>
+					<div class="miingreso-afiliado">
+						<p class="mingreso-afil">$40,500 MXN</p>
+					</div>
+					<div class="susafiliados">
+						<span class="fi-torso susafiliados-bronce"> x 15</span>
+						<span class="fi-torso susafiliados-plata"> x 10</span>
+						<span class="fi-torso susafiliados-oro"> x 5</span>
+					</div>
+					<br>
+					<a href="" class="visitar-redafiliado button ">
+						Visitar
+					</a>
+				</div>
+				<div class="afiliado cont-3 columna">
+					<div class="arrow-afil">
+						<span class='fi-arrow-down flechabajo'></span>
+					</div>
+					<div class="redimage">
+						<img src="../img/per/peo4.jpg">
+					</div>	
+					<div class="afiliado-nick">
+						<p class="afiliado-nick-nick">@jorgeRM</p>
+					</div>
+					<div class="miingreso-afiliado">
+						<p class="mingreso-afil">$40,500 MXN</p>
+					</div>
+					<div class="susafiliados">
+						<span class="fi-torso susafiliados-bronce"> x 15</span>
+						<span class="fi-torso susafiliados-plata"> x 10</span>
+						<span class="fi-torso susafiliados-oro"> x 5</span>
+					</div>
+					<br>
+					<a href="" class="visitar-redafiliado button ">
+						Visitar
+					</a>
+				</div>
+				<div class="afiliado cont-3 columna">
+					<div class="arrow-afil">
+						<span class='fi-arrow-down flechabajo'></span>
+					</div>
+					<div class="redimage">
+						<img src="../img/per/peo1.jpg">
+					</div>	
+					<div class="afiliado-nick">
+						<p class="afiliado-nick-nick">@jorgeRM</p>
+					</div>
+					<div class="miingreso-afiliado">
+						<p class="mingreso-afil">$40,500 MXN</p>
+					</div>
+					<div class="susafiliados">
+						<span class="fi-torso susafiliados-bronce"> x 15</span>
+						<span class="fi-torso susafiliados-plata"> x 10</span>
+						<span class="fi-torso susafiliados-oro"> x 5</span>
+					</div>
+					<br>
+					<a href="" class="visitar-redafiliado button ">
+						Visitar
+					</a>
+				</div>
+				<div class="pagination-centered">
+				  <ul class="pagination">
+				    <li class="arrow unavailable"><a href="">&laquo;</a></li>
+				    <li class="current"><a href="">1</a></li>
+				    <li><a href="">2</a></li>
+				    <li><a href="">3</a></li>
+				    <li><a href="">4</a></li>
+				    <li class="unavailable"><a href="">&hellip;</a></li>
+				    <li><a href="">12</a></li>
+				    <li><a href="">13</a></li>
+				    <li class="arrow"><a href="">&raquo;</a></li>
+				  </ul>
+				</div>
+			</div>
+			<div class="cinta oro">
+				<h3>Afiliados oro</h3>
+			</div>
+			<div id="afiliados">
+				<div class="afiliado cont-3 columna">
+					<div class="arrow-afil">
+						<span class='fi-arrow-down flechabajo'></span>
+					</div>
+					<div class="redimage">
+						<img src="../img/per/peo2.jpg">
+					</div>	
+					<div class="afiliado-nick">
+						<p class="afiliado-nick-nick">@jorgeRM</p>
+					</div>
+					<div class="miingreso-afiliado">
+						<p class="mingreso-afil">$40,500 MXN</p>
+					</div>
+					<div class="susafiliados">
+						<span class="fi-torso susafiliados-bronce"> x 15</span>
+						<span class="fi-torso susafiliados-plata"> x 10</span>
+						<span class="fi-torso susafiliados-oro"> x 5</span>
+					</div>
+					<br>
+					<a href="" class="visitar-redafiliado button ">
+						Visitar
+					</a>
+				</div>
+				<div class="afiliado cont-3 columna">
+					<div class="arrow-afil">
+						<span class='fi-arrow-down flechabajo'></span>
+					</div>
+					<div class="redimage">
+						<img src="../img/per/peo3.jpg">
+					</div>	
+					<div class="afiliado-nick">
+						<p class="afiliado-nick-nick">@jorgeRM</p>
+					</div>
+					<div class="miingreso-afiliado">
+						<p class="mingreso-afil">$40,500 MXN</p>
+					</div>
+					<div class="susafiliados">
+						<span class="fi-torso susafiliados-bronce"> x 15</span>
+						<span class="fi-torso susafiliados-plata"> x 10</span>
+						<span class="fi-torso susafiliados-oro"> x 5</span>
+					</div>
+					<br>
+					<a href="" class="visitar-redafiliado button ">
+						Visitar
+					</a>
+				</div>
+				<div class="afiliado cont-3 columna">
+					<div class="arrow-afil">
+						<span class='fi-arrow-down flechabajo'></span>
+					</div>
+					<div class="redimage">
+						<img src="../img/per/peo4.jpg">
+					</div>	
+					<div class="afiliado-nick">
+						<p class="afiliado-nick-nick">@jorgeRM</p>
+					</div>
+					<div class="miingreso-afiliado">
+						<p class="mingreso-afil">$40,500 MXN</p>
+					</div>
+					<div class="susafiliados">
+						<span class="fi-torso susafiliados-bronce"> x 15</span>
+						<span class="fi-torso susafiliados-plata"> x 10</span>
+						<span class="fi-torso susafiliados-oro"> x 5</span>
+					</div>
+					<br>
+					<a href="" class="visitar-redafiliado button ">
+						Visitar
+					</a>
+				</div>
+				<div class="afiliado cont-3 columna">
+					<div class="arrow-afil">
+						<span class='fi-arrow-down flechabajo'></span>
+					</div>
+					<div class="redimage">
+						<img src="../img/per/peo1.jpg">
+					</div>	
+					<div class="afiliado-nick">
+						<p class="afiliado-nick-nick">@jorgeRM</p>
+					</div>
+					<div class="miingreso-afiliado">
+						<p class="mingreso-afil">$40,500 MXN</p>
+					</div>
+					<div class="susafiliados">
+						<span class="fi-torso susafiliados-bronce"> x 15</span>
+						<span class="fi-torso susafiliados-plata"> x 10</span>
+						<span class="fi-torso susafiliados-oro"> x 5</span>
+					</div>
+					<br>
+					<a href="" class="visitar-redafiliado button ">
+						Visitar
+					</a>
+				</div>
+				<div class="pagination-centered">
+				  <ul class="pagination">
+				    <li class="arrow unavailable"><a href="">&laquo;</a></li>
+				    <li class="current"><a href="">1</a></li>
+				    <li><a href="">2</a></li>
+				    <li><a href="">3</a></li>
+				    <li><a href="">4</a></li>
+				    <li class="unavailable"><a href="">&hellip;</a></li>
+				    <li><a href="">12</a></li>
+				    <li><a href="">13</a></li>
+				    <li class="arrow"><a href="">&raquo;</a></li>
+				  </ul>
+				</div>
+			</div>
+
+		</div>
+
+	</section>
+	<footer>
+	</footer>
+</body>
+<script type="text/javascript">
+	function notific(num){
+		if (num == 0) {
+			document.getElementById('notificaciones-lista').className = "visible";
+			document.getElementById('notbutton2').className = "button alert visible";
+			document.getElementById('notbutton').className = "button alert invisible";
+			num == 1;
+			return num;
+		};
+		if (num == 1) {
+			document.getElementById('notificaciones-lista').className = "invisible";
+			document.getElementById('notbutton').className = "button alert visible";
+			document.getElementById('notbutton2').className = "button alert invisible";
+			num == 0;
+			return num;
+		};
+	}
+</script>
+<script src="../dist/js/jquery.js"></script>
+
+<script src="../dist/js/foundation.min.js"></script>
+<script src="../dist/js/foundation/foundation.clearing.js"></script>
+<script src="../dist/js/foundation/foundation.alert.js"></script>
+<script src="../dist/js/foundation/foundation.tab.js"></script>
+
+<script>
+    /*Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+    Galleria.run('.galleria');*/
+</script>
+<script>
+  $(document).foundation({
+    tab: {
+      callback : function (tab) {
+        console.log(tab);
+      }
+    }
+  });
+</script>
+<script>
+  $('#myTabs').on('toggled', function (event, tab) {
+    console.log(tab);
+  });
+</script>
+<script>
+    $(document).foundation();
+</script>
+</html>

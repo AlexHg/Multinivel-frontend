@@ -1,0 +1,339 @@
+
+/* MODIFICANDO FOUNDATION */
+.row
+	max-width 1200px !important
+	float center !important
+	box-align center
+	text-align center
+.cont-1, .cont-2, .cont-3, .cont-4, .cont-5, .cont-6, .cont-7, .cont-8, .cont-9, .cont-10, .cont-11, .cont-12, .cont-5
+	min-height 1em
+	text-align left
+	padding .5em 1em
+	@media only screen and (max-width: 700px)
+		width 100% !important
+.cont-1
+	width 8%
+.cont-2
+	width 16%
+.cont-3
+	width 24%
+.cont-4
+	width 33%
+	@media only screen and (max-width: 800px)
+		width 32% !important
+	@media only screen and (max-width: 650px)
+		width 100% !important
+.cont-5
+	width 41%
+.cont-6
+	width 49%
+.cont-7
+	width 58%
+.cont-8
+	width 66%
+.cont-9
+	width 74%
+.cont-10
+	width 83%
+.cont-11
+	width 91%
+.cont-12
+	width 99%
+.columna 
+	display inline-block
+	vertical-align bottom
+	vertical-align top
+.reveal-modal
+	margin-left: -47.5% !important
+	width 95% !important
+p, h1. h2, h3
+	font-family 'Open Sans Condensed', sans-serif !important
+	color #0D0D0B
+header
+	p, h1. h2, h3
+		font-family 'Open Sans Condensed', sans-serif
+	#user-bar
+		height 30px
+		background #2ea3f2 url('../img/blugr2.jpg')
+		#info-of-userbar
+			padding 5px 10px 0 10px
+			#part01
+				text-align left
+				height 30px !important
+				width 50% !important
+				float left
+			#part02
+				text-align right
+				height 30px !important
+				width 50%
+				float right
+				@media only screen and (max-width: 767px)
+					width 100%
+			#part02, #part01
+				display inline-block
+				vertical-align bottom
+				a 
+					display inline-block
+					vertical-align top
+					margin-right 5px
+					height 20px
+				p
+					color #abdafa
+					font-size 13px !important
+					&:hover
+						color #CBE9FE
+	#headline
+		height 60px
+		border-bottom 2px solid black
+		background #1f1f1f 
+		#headlineint
+			height 50px !important
+			#title
+				margin-top -5px
+			h3
+				color #A9AD9A
+				font-size 1.7rem
+	//Lista de notificaciones
+	#notificaciones-lista
+		background #5B5B5B
+		text-align center
+		border-bottom 1px solid black
+		ul
+			text-align center
+			list-style none
+			background #3C3C3C
+			margin 0
+			li
+				padding .3em 0
+				color #0180FE
+				background #3C3C3C
+				border-top 1px solid #454545
+				border-bottom 1px solid #303030
+				&:hover
+					background #303030
+			#last-il
+				box-shadow 0 5px 10px black
+				height 0 !important
+				&:hover
+					background #3C3C3C
+			#first-il
+				&:hover
+					background #3C3C3C
+			#ver-todas
+				color #CA6500
+// LOGIN
+.contOfLogin, #logoIndexApp
+	text-align center
+#indexLogIn
+		#logoIndexApp
+			font-size 4em !important
+			text-align center
+			color lighten(black,25%) !important 
+			h2
+				color lighten(black,25%) !important 
+			small
+				color #3D99F5
+				font-weight normal
+			#icontainer
+				margin-bottom -0.5em
+				.fi-cloud
+					font-size 1.7em
+		.fi-torso-business, .fi-lock
+			text-align center !important
+			font-size 2em !important 
+		form
+			text-align center !important
+			label
+				font-size 1.3rem !important
+				display inline-block
+				text-align center
+				vertical-align top
+			input
+				width 75%
+				display inline-block !important
+				vertical-align top
+				margin .2em 0 0 .5em
+				#user, #pass
+					width 50% !important
+					display inline-block
+			#checkbox1
+				width 20px
+				#contCheck
+					font-size .2em !important
+			.button 
+				width 40%
+//Notification-button
+#notificacion
+	position absolute
+	right 30px
+	top 34px
+	height 40px
+	margin 0
+	@media only screen and (max-width: 767px)
+		right 5px
+	/*span
+		color #404040
+		font-size 1.7em
+		text-shadow: 1px 0 0 #2E2E2E, -1px 0 0 #2E2E2E, 0 1px 0 #2E2E2E, 0 -1px 0 #2E2E2E, 1px 1px #2E2E2E, -1px -1px 0 #2E2E2E, 1px -1px 0 #2E2E2E, -1px 1px 0 #2E2E2E
+		&:hover
+			color #0F0F0D*/
+	.activate
+		color #3C3C3C
+		&:hover
+			color #494949
+	.noti-activate
+		color #22465B
+		text-shadow: 1px 0 0 #30617E, -1px 0 0 #30617E, 0 1px 0 #30617E, 0 -1px 0 #30617E, 1px 1px #30617E, -1px -1px 0 #30617E, 1px -1px 0 #30617E, -1px 1px 0 #30617E
+		&:hover
+			color #29546D
+	p
+		color #0A0A0A
+//alerts
+#alerts
+	.alert-box
+		margin 0 0 7px 0
+		a
+			color black
+		a:hover
+			text-decoration underline
+		.close
+			text-decoration none !important
+	.inmodal-table
+		width 100% !important
+		float center
+		text-align center
+		thead 
+			width 100% !important
+		tr 
+			width 100% !important
+//user-profile
+#user-profile
+	border-bottom 3px dashed #DDDED8
+	#link-afiliado
+		p
+			text-align center
+	#img-user-profile
+		width 140px
+		margin-bottom 7px
+		img
+			height 140px
+			border 2px solid #272822
+	#info-user-profile
+		height 140px
+		width 300px
+		ul
+			li
+				list-style none
+				margin-top -12px
+	#info-user-profile, #img-user-profile
+		display inline-block
+		vertical-align top
+		margin-top 15px
+		@media only screen and (max-width: 600px)
+			text-align center !important
+			width 100% !important
+	#bank-user-profile
+		font-size .8em
+		margin-top -15px !important
+#user-contador
+	text-align center
+	.cont-4
+		text-align center
+		h4
+			margin-top -15px
+		#cont-total
+			color #2475D7
+		#cont-mensual
+			color #44B71E
+		#cont-user
+			color #BA1B1B
+//Modals
+#Modal-editar
+	div
+		form
+			#foto-change
+				text-align center
+				img
+					width 140px
+			#separador
+				border-bottom 3px dashed #DDDED8
+#Modal-cursos
+	#mis-cursos
+		padding 0
+		.curso
+			max-width 850px
+			background white
+			padding 0
+			margin 1em 0
+			box-shadow 3px 3px 15px 5px gray
+			.Name-curso, .Image-curso
+				width 50%
+				display inline-block
+				vertical-align top
+				height 120px
+				margin 0 -1px
+				@media only screen and (max-width: 820px)
+					width 100%
+					margin 0 !important
+					height 100px
+			.Name-curso
+				//background black
+				padding 1em
+				text-align center
+				h3
+					font-size 1.8em
+					border-bottom 2px solid #BFBFBF
+			.Image-curso
+				background-size 100% !important
+				background-position center
+#contenido
+	#mired
+		.pagi
+			text-align center !important
+		.cinta
+			padding-top 30px
+			width 100%
+		.bronce h3
+			color #9E5829
+		.plata h3
+			color #BDBFB5
+		.oro h3
+			color #D5CF00
+		.afiliado
+			.arrow-afil
+				text-align center
+				.flechabajo
+					color #137195
+					font-size 3em
+					text-align center
+			&:hover
+				background #E2E3DF
+		.redimage
+			text-align center
+			img
+				height 140px
+				border 2px solid #272822
+				text-align center !important
+		.afiliado-nick, .miingreso-afiliado, .susafiliados, .afiliado
+			text-align center
+		.afiliado-nick
+			p
+				color #137195
+				margin-bottom .3em
+		.susafiliados-bronce 
+			color #A05629
+		.susafiliados-plata
+			color #888888
+		.susafiliados-oro 
+			color #CDCA38
+		.visitar-redafiliado
+			max-width 150px
+			width 100%
+.cinta
+	.bronce
+		background white url("../img/bronce.jpg")
+		height 150px
+	.plata
+		background url("../img/plaa.jpg")
+	.oro
+		background url("../img/oro.jpg")

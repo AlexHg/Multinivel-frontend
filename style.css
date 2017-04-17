@@ -1,0 +1,126 @@
+.row{max-width:1200px !important;float:center !important;box-align:center;text-align:center}
+.cont-1,.cont-2,.cont-3,.cont-4,.cont-5,.cont-6,.cont-7,.cont-8,.cont-9,.cont-10,.cont-11,.cont-12,.cont-5{min-height:1em;text-align:left;padding:.5em 1em;}
+@media only screen and (max-width: 700px){.cont-1,.cont-2,.cont-3,.cont-4,.cont-5,.cont-6,.cont-7,.cont-8,.cont-9,.cont-10,.cont-11,.cont-12,.cont-5{width:100% !important}
+}.cont-1{width:8%}
+.cont-2{width:16%}
+.cont-3{width:24%}
+.cont-4{width:33%;}
+@media only screen and (max-width: 800px){.cont-4{width:32% !important}
+}@media only screen and (max-width: 650px){.cont-4{width:100% !important}
+}.cont-5{width:41%}
+.cont-6{width:49%}
+.cont-7{width:58%}
+.cont-8{width:66%}
+.cont-9{width:74%}
+.cont-10{width:83%}
+.cont-11{width:91%}
+.cont-12{width:99%}
+.columna{display:inline-block;vertical-align:bottom;vertical-align:top}
+.reveal-modal{margin-left:-47.5% !important;width:95% !important}
+p,h1. h2,h3{font-family:'Open Sans Condensed',sans-serif !important;color:#0d0d0b}
+header p,header h1. h2,header h3{font-family:'Open Sans Condensed',sans-serif}
+header #user-bar{height:30px;background:#2ea3f2 url("img/blugr2.jpg");}
+header #user-bar #info-of-userbar{padding:5px 10px 0 10px;}
+header #user-bar #info-of-userbar #part01{text-align:left;height:30px !important;width:50% !important;float:left}
+header #user-bar #info-of-userbar #part02{text-align:right;height:30px !important;width:50%;float:right;}
+@media only screen and (max-width: 767px){header #user-bar #info-of-userbar #part02{width:100%}
+}header #user-bar #info-of-userbar #part02,header #user-bar #info-of-userbar #part01{display:inline-block;vertical-align:bottom;}
+header #user-bar #info-of-userbar #part02 a,header #user-bar #info-of-userbar #part01 a{display:inline-block;vertical-align:top;margin-right:5px;height:20px}
+header #user-bar #info-of-userbar #part02 p,header #user-bar #info-of-userbar #part01 p{color:#abdafa;font-size:13px !important;}
+header #user-bar #info-of-userbar #part02 p:hover,header #user-bar #info-of-userbar #part01 p:hover{color:#cbe9fe}
+header #headline{height:60px;border-bottom:2px solid #000;background:#1f1f1f;}
+header #headline #headlineint{height:50px !important;}
+header #headline #headlineint #title{margin-top:-5px}
+header #headline #headlineint h3{color:#a9ad9a;font-size:1.7rem}
+#slide{height:500px;background:#000 url("img/back/back.jpg");background-size:auto auto;background-repeat:no-repeat;background-position:center center;}
+@media only screen and (max-width: 900px){#slide{height:340px !important}
+}@media only screen and (max-width: 760px){#slide{height:260px !important}
+}#slide #infocont{height:500px;}
+@media only screen and (max-width: 900px){#slide #infocont{height:340px !important}
+}@media only screen and (max-width: 760px){#slide #infocont{height:260px !important}
+}#slide #infocont h2{text-align:center;color:#272822;margin-top:100px;}
+@media only screen and (max-width: 900px){#slide #infocont h2{margin-top:50px !important;font-size:2em}
+}@media only screen and (max-width: 760px){#slide #infocont h2{margin-top:20px !important;font-size:1.5em}
+}#slide #infocont #buttonprin{width:60% !important;margin:auto 19% !important;background:rgba(0,0,0,0.2);border:2px solid #272822;}
+#slide #infocont #buttonprin h5{color:#272822;font-weight:bold}
+#slide #infocont #buttonprin:hover{background:#0053a6}
+#slide #infocont #bussinesman{height:500px;background:url("bussines.png");background-size:350px auto;background-repeat:no-repeat;background-position:center bottom;}
+@media only screen and (max-width: 900px){#slide #infocont #bussinesman{background-size:240px auto !important;height:340px !important}
+}@media only screen and (max-width: 760px){#slide #infocont #bussinesman{background-size:260px auto !important;height:260px !important}
+}#slide p,#slide h1. h2,#slide h3{font-family:'Open Sans Condensed',sans-serif !important}
+section p,section h1. h2,section h3{font-family:'Open Sans Condensed',sans-serif !important;color:#0d0d0b !important}
+#quienessomos{margin:2em auto;}
+#quienessomos .icon-left{width:100%;color:#7c4dd5;text-align:center;font-size:2.5em}
+#quienessomos .text-right{width:100%;text-align:center !important}
+#quienessomos .icon-left,#quienessomos .text-right{display:inline-block;vertical-align:top}
+#register{background:url("img/blugr.jpg");}
+#register .buttonregis2{max-width:40% !important;margin:1.5em 0;background:rgba(0,0,0,0);border:2px solid #c00;display:inline-block;vertical-align:top;}
+#register .buttonregis2 h5{color:#c00}
+#register .buttonregis2:hover{background:rgba(0,0,0,0.3)}
+#register .buttonregis{max-width:40% !important;margin:1.5em 0;background:rgba(0,0,0,0);border:2px solid #272822;display:inline-block;vertical-align:top;}
+#register .buttonregis h5{color:#272822}
+#register .buttonregis:hover{background:#17798e}
+#register .mensaje-video{height:0}
+#register .mensaje-video2{height:auto}
+#video{text-align:center;background-color:#1b1b1b;}
+#video .video-cont{max-width:900px !important}
+#video img{width:100%}
+#productos{padding-bottom:1em;}
+#productos .pricing{padding:5px;text-align:center;}
+#productos .pricing .pricing-cont{border-radius:3em !important;}
+#productos .pricing .pricing-cont .pricing-header{background:#363636 url("img/blakgr.jpg");border-radius:1em 1em 0 0 !important;height:5em;padding-top:1.3em;border-top:1px solid #363636;border-left:1px solid #363636;border-right:1px solid #363636;}
+#productos .pricing .pricing-cont .pricing-header h3{margin-bottom:-2px !important;color:#ecede9}
+#productos .pricing .pricing-cont .pricing-header small{margin-top:-2px !important}
+#productos .pricing .pricing-cont .pricing-price-plata{background:linear-gradient(10deg,#adbec0 30%,#889fb0 80%);border:1px solid #adbec0;}
+#productos .pricing .pricing-cont .pricing-price-plata span{color:#fff}
+#productos .pricing .pricing-cont .pricing-price-bronce{background:linear-gradient(10deg,#93da9f 30%,#66d2ac 80%);border:1px solid #a3e0ad;}
+#productos .pricing .pricing-cont .pricing-price-bronce span{color:#fff}
+#productos .pricing .pricing-cont .pricing-price-oro{background:linear-gradient(10deg,#dcda92 30%,#d0d663 80%);border:1px solid #dcda92;}
+#productos .pricing .pricing-cont .pricing-price-oro span{color:#fff}
+#productos .pricing .pricing-cont .pricing-body{border-left:1px solid #b5b5b5;border-right:1px solid #b5b5b5;border-bottom:1px solid #b5b5b5;border-radius:0 0 .5em .5em !important;}
+#productos .pricing .pricing-cont .pricing-body ul{padding-top:1em;}
+#productos .pricing .pricing-cont .pricing-body ul li{list-style:none;margin-bottom:-1em !important;}
+#productos .pricing .pricing-cont .pricing-body ul li input{max-width:100%}
+#comoquieras{height:450px;background:url("img/comoquieras.jpg");background-size:auto 125%;background-position:center;}
+#comoquieras h2{color:#670a7e;text-align:center;}
+#comoquieras h2 small{color:#104a8b}
+#contador{background:url("img/blakgr.jpg");}
+#contador h2,#contador h4,#contador h1,#contador h3,#contador h5{text-align:center;color:#fff}
+#contador h2{font-size:2.5em}
+#contador #cone{color:#b95fe0}
+#contador #ctwo{color:#63f45b}
+#contador #ctree{color:#62b3e3}
+#contador #cfour{color:#da6d76}
+#contador .row{padding:2em 0}
+#testimonios #titlebar{background:#1f1f1f;padding:1em 0;}
+#testimonios #titlebar h2{color:#fff}
+#testimonios #test00 #test01{background:url("img/perback/n04.jpg")}
+#testimonios #test00 #test02{background:url("img/perback/n02.jpg")}
+#testimonios #test00 #test03{background:url("img/perback/n03.jpg")}
+#testimonios #test00 #test04{background:url("img/perback/n01.jpg")}
+#testimonios #test00 #test01,#testimonios #test00 #test02,#testimonios #test00 #test03,#testimonios #test00 #test04{height:200px;background-size:auto;background-repeat:no-repeat;background-position:center bottom;width:25%;display:inline-block;vertical-align:top;margin:0 -2px}
+#testimonios #test00 .infotest{height:200px;width:100%;opacity:0;text-align:center;padding-top:1em;}
+@media only screen and (max-width: 760px){#testimonios #test00 .infotest{opacity:1;background-color:rgba(0,0,0,0.8)}
+}#testimonios #test00 .infotest:hover{opacity:1;background-color:rgba(0,0,0,0.8) !important}
+#testimonios #test00 .infotest img{border-radius:100em;border:1px solid #2460a2;width:30%;}
+@media only screen and (max-width: 900px){#testimonios #test00 .infotest img{width:50%}
+}@media only screen and (max-width: 760px){#testimonios #test00 .infotest img{width:70%}
+}#testimonios #test00 .infotest h4{color:#fff}
+#faq{background:#2ea3f2 url("img/blugr2.jpg");background-size:auto 100%;background-repeat:no-repeat;background-position:center bottom;padding-bottom:1.5em;}
+#faq .qaf{width:100% !important}
+#faq .faqu{text-align:center;}
+#faq .faqu h5{color:#004080}
+#faq h2{text-align:center;color:#eaeaea;margin-bottom:1.5em;}
+#faq h2 small{color:#004080}
+.ecologico{background:#67f158;text-align:center;padding-top:.5em;height:110px;}
+.ecologico h3{text-align:center;color:#0e8800;}
+.ecologico h3 .texto{margin-top:.5em}
+.ecologico img{width:70px}
+footer{background:#1f1f1f;color:#ddd;text-align:center;padding-bottom:.7em;padding-top:3em;}
+footer h5,footer h6{color:#009fce;text-align:center}
+footer p{text-align:center}
+footer .infoot{margin-bottom:3em;text-align:center}
+footer #firma{position:absolute;right:0;width:70px;bottom:240px;}
+footer #firma:hover{width:75px !important}
+footer #footline{height:3em;background:#2a2a2a}
+footer #burntheweb{text-align:left}

@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Mi oficina: iniciar sesión</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<meta name="description" content="">
+<meta name="author" content="Burntheweb - Alejandro Hernandez">
+<link rel="shortcut icon" href="../favicon.ico" />
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, height=device-height,maximum-scale=2, user-scalable=no"/>
+    <meta name="MobileOptimized" content="320"/>
+    <meta name="handheldFriendly" content="true"/>
+	<link rel="stylesheet" href="../dist/fonts/foundation-icons.css">
+	<!--Foundation-->
+	<link rel="stylesheet" type="text/css" href="../dist/css/foundation.css" />
+    <script src="../dist/js/modernizr.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
+
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+	/*ESCONDER CAJAS POR MEDIO DE CLASES*/
+	body .invisible{display:none;}
+    body .visible{display:display;}
+    body .visiblei{display:display !important}
+	/*REGLAS: class="va1-var2"
+	var1= visible || hidden; (mostrar || esconder)
+	var2= phone || tablet || desktop; (telefono || tableta || PC)
+	*armar convinacion adecuada* */
+	    .hidden{display:none;visibility:hidden}
+	    .visible-phone{display:none !important}
+	    .visible-tablet{display:none !important}
+	    .hidden-desktop{display:none !important}
+	    .visible-desktop{display:inherit !important}
+	    @media (min-width: 768px) and (max-width: 979px){.hidden-desktop{display:inherit !important}
+	    .visible-desktop{display:none !important}
+	    .visible-tablet{display:inherit !important}
+	    .hidden-tablet{display:none !important}}
+	    @media (max-width: 767px){.hidden-desktop{display:inherit !important}
+	    .visible-desktop{display:none !important}
+	    .visible-phone{display:inherit !important}
+	    .hidden-phone{display:none !important}}
+	</style>
+</head>
+<body>
+	<header>
+		<div id="user-bar">
+			<div id="info-of-userbar" class="row">
+				<div id="part01" class="visible-desktop">
+					<a href=""><p><i class="fi-telephone"></i> 01800-278-5487</p></a>
+					<a href=""><p><i class="fi-mail"></i> empresa@laemp.com</p></a>
+					<a href=""><p> <i class="fi-social-facebook"> Facebook</i></p></a>
+					<a href=""><p> <i class="fi-social-twitter"> Twitter</i></p></a>
+				</div>
+				<div id="part02">
+					<a href=""><p>Iniciar Sesion</p></a>
+					<a href=""><p>Registrarse</p></a>
+				</div>
+			</div>
+		</div>
+		<div id="headline">
+			<div class="row" id="headlineint">
+				<div class="cont-5" id="title"><a href=""><h3>Iniciar sesión </h3></a></div>
+			</div>
+		</div>		
+	</header>
+	<section id="indexLogIn">
+		<div class="row">
+			<div class="contenedorX">
+				<div class="cont-8 columna">
+					<div id="logoIndexApp">
+						<div id="icontainer"><i class="fi-cloud"></i></div><h2> Mi oficina virtual</h2>
+					</div>
+				</div>
+			</div>
+			<div class="contenedorX">
+				<style type="text/css">
+				@media (min-width: 568px){
+					.contOfLogin{ width: 442px !important }
+				}
+				</style>
+				<div class="cont-4 panel columna contOfLogin">
+					<form > <!--method='post' action='login.php' id="login"-->
+						<!-- name = user-login  -->
+						<label for="user"><i class="fi-torso-business"></i></label> <input id="user" name="user-login" type="text" required placeholder="Nombre de usuario"><br>
+						<!-- name = pass-login  -->
+						<label for="pass"><i class="fi-lock"></i></label> <input id="pass" name="pass-login" type="password" required placeholder="Contraseña"><br>
+						<div id="contCheck">
+							<input id="checkbox1" type="checkbox"><label for="checkbox1">Recordar usuario</label><br>
+						</div>
+						<div><br><input onclick="login()" class="button" type="submit" value="Entrar"></div>
+						<br>
+						<div><a href="#">Recuperar contraseña o usuario.</a></div>
+					</form>	
+				</div>
+				<div class="cont-12"></div>
+				<style type="text/css">
+					#boton1, #boton2 {
+						width: 49%;
+					}
+					#contOfLogin{
+						position: relative;
+						margin-top: -45px;
+					}
+				</style>
+				<br>
+				<div class="cont-4 panel columna contOfLogin" id="contOfLogin">
+					<a href="#" data-reveal-id="myModal" class="radius button alert" id="boton1">Registrarme</a>
+					<div id="myModal" class="reveal-modal" data-reveal>
+					  <h2>Awesome. I have it.</h2>
+					  <p class="lead">Your couch.  It is mine.</p>
+					  <p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
+					  <a class="close-reveal-modal">&#215;</a>
+					</div>
+
+					<a href="#" data-reveal-id="myModal2" class="radius button success" id="boton2">Tutorial</a>
+					<div id="myModal2" class="reveal-modal" data-reveal>
+					  <h2>Awesome. I have it.</h2>
+					  <p class="lead">Your couch.  It is mine.</p>
+					  <p>Im a cool paragraph that lives inside of an even cooler modal. Wins</p>
+					  <a class="close-reveal-modal">&#215;</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section></section>
+	<footer>
+	</footer>
+</body>
+<script src="../dist/js/jquery.js"></script>
+
+<script src="../dist/js/foundation.min.js"></script>
+<script src="../dist/js/foundation/foundation.clearing.js"></script>
+<script>
+    Galleria.loadTheme('galleria/themes/classic/galleria.classic.min.js');
+    Galleria.run('.galleria');
+</script>
+<script>
+    $(document).foundation();
+</script>
+</html>
